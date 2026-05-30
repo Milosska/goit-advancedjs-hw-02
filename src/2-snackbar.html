@@ -20,6 +20,27 @@
     <a class="go-back-link" href="./index.html">Go back</a>
     <h1>Snackbar</h1>
 
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit" disabled>Create notification</button>
+    </form>
+
     <script src="./js/2-snackbar.js" type="module"></script>
   </body>
 </html>

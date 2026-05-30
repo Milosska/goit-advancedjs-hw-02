@@ -1,0 +1,89 @@
+/* #region Form styles */
+form {
+  width: 400px;
+  padding: 0 20px;
+}
+
+label {
+  letter-spacing: 0.04em;
+}
+
+input[name='delay'] {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-color: #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 360px;
+  margin-top: 16px;
+
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+}
+
+input[type='radio'] {
+  border-color: 1px solid #757575;
+  border-radius: 14px;
+  outline: none;
+  width: 20px;
+  height: 20px;
+}
+
+button[type='submit'] {
+  display: inline-block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus {
+  background-color: #6c8cff;
+}
+
+button[type='submit']:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+/* #endregion Form styles */
+
+/* #region Toast message */
+.toast {
+  min-width: 411px;
+  padding: 20px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.iziToast > .iziToast-close {
+  background-image: none !important;
+}
+
+.iziToast > .iziToast-close::before {
+  content: '✕';
+  color: white;
+  font-size: 20px;
+}
+/* #endregion Toast message */
